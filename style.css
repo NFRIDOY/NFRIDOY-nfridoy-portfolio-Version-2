@@ -11,11 +11,19 @@ body {
 }
 .highlight {
     color: orange;
-    transition:  all 1.5s ease-in-out 0s;
+    transition:  all 2s ease-in-out 0s;
 }
 .highlight:hover {
-    color: blue;
     
+    color: blue;
+}
+header {
+    /* text-align: center; */
+    margin-left: 30px;
+
+}
+header::after {
+    transform: translate(100px);
 }
 h1 {
     font-size: 50px;
@@ -28,7 +36,9 @@ h2 {
     font-size: 24px;
     padding-bottom: 30px;
 }
-
+p {
+    color: dimgray;
+}
 a {
     text-decoration: none;
     
@@ -71,9 +81,22 @@ a {
 .half-width img {
     width: 100%;
 }
+#sec3 {
+    display: grid;
+}
+.container3 {
+    display: grid;
+    /* display: flex; */
+    border: 2px solid red;
+    /* width: 50%;
+    height: 50%; */
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-gap: 20px;
+}
 
 .link-button {
-    border: 3px solid black;
+    /* border: 3px solid black; */
     border-radius: 10px;
     padding: 10px 20px;
     /* margin-top: 10px; */
