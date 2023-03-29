@@ -43,6 +43,22 @@ a {
     margin-bottom: 30px;
     
 }
+@media (max-width: 1200px) {
+    .container1 {
+        flex-direction: column;
+    }
+    
+    #sec1 {
+        flex-direction: column;
+    }
+    #sec2 {
+        flex-direction: column-reverse
+    }
+    .half-width {
+        width: 100%;
+    }
+    
+}
 .half-width {
     width: 50%;
     height: 100;
